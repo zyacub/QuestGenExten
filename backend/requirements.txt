@@ -1,2 +1,0 @@
-git+https://github.com/deepset-ai/haystack.git@3272e2b9fec70ca769eb752b97f3ea284563fd7c
-newspaper3k==0.2.8
