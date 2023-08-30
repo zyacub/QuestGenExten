@@ -43,7 +43,7 @@ fetchQuestions = () => {
   chrome.storage.local.get(['url']).then((res) => {
     url = res.url;
     console.log(url);
-    query_url = "REPLACE WITH YOUR URL" + url;
+    query_url = "https://questgen.ngrok.io/url/" + url;
     fetch(query_url)
   .then(data => {
     return data.json()
