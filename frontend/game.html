@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Play</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loader"></div>
+        <div id="game" class="justify-center flex-column hidden" >
+            <h2 id="question"></h2>
+            <form>
+                <textarea name="" id="answer" cols="100" rows="10">Enter your answer here...</textarea>
+                <button type="button" id = "submit-answer">Submit Answer</button>
+            </form>
+            <button type="button" id="next-question">Next Question</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

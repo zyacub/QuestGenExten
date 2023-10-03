@@ -1,0 +1,88 @@
+
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1rem solid #56a5eb;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+  }
+  
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+
+button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+
+
+
+
+#loader { 
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add these styles to your game.css file */
+#question-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#question-list li {
+  font-size: 12px;
+  margin: 15px 0; /* Add more margin to separate question items */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align all child elements */
+}
+
+.question-text {
+  font-size: 16px;
+  margin-bottom: 5px; /* Add space between question and helpful text */
+}
+
+.answer-button {
+  font-size: 10px;
+  padding: 5px 5px;
+  margin: 3px;
+}
+
+/* Adjust the padding and margin for the end-page container */
+#end-page {
+  padding: 5px; /* Add more padding to create space at the top */
+  margin-top: 0px; /* Add margin to push content down from the top */
+  height: 100%;
+}
